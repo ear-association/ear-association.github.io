@@ -1,0 +1,10 @@
+.page {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  padding: 15px;
+  font-size: 20px;
+}
