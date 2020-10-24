@@ -19,3 +19,16 @@ h1, h2 {
   font-weight: bold;
 }
 
+.music-icons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.music-icons img {
+  height: 40px;
+  padding: 10px;
+}
+
+iframe {
+  width: 100%;
+}
