@@ -6,7 +6,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" type="image/jpg" href="favicon.png"/>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="/style.css">
 	<script src="submit.js"></script>
 </head>
 
@@ -14,13 +14,13 @@
 
 	<h1>Ear Association - Suggest a Song</h1>
 	
-	<form>
+	<form method="post" action="https://forms.un-static.com/forms/87807fbda93a7012dbf9e805fea9c4a2c2fb7d41">
 		<div>
 			<label for="from-track">
 				<strong>Track you're responding to:</strong>
 				<br>ear-association.github.io/
 			</label>
-			<input id="from-track" type="text" size="30" required>
+			<input name="from-track" id="from-track" type="text" size="30" value="bar" required>
 		</div>
 		<br>
 		<div>
@@ -28,23 +28,23 @@
 				<strong>Track you're suggesting:</strong> (link to YouTube, Bandcamp, etc.)
 				<br>
 			</label>
-			<input id="new-track" type="url" size="40" required>
+			<input name="new-track" id="new-track" type="url" size="40" required>
 		</div>
 		<br>
 		<div>
 			<label for="blurb">
-			<strong>What made you think of this piece? What do you like about it?</strong>
-			(aim for roughly 60-100 words)
-			<br>					
+				<strong>What made you think of this piece? What do you like about it?</strong>
+				(aim for roughly 60-100 words)
+				<br>					
 			</label>
-			<textarea id="blurb" rows="6" cols="80" maxlength="2048" required></textarea>
+			<textarea name="blurb" id="blurb" rows="6" cols="80" maxlength="2048" required></textarea>
 		</div>
 		<br>
 		<div>
 			<strong>Email:</strong> (this won't be shared - it's just so that Jacob or Evy can contact you if we need to)
 			<br>
 			<label for="email"></label>
-			<input id="email" type="email" size="40" required>
+			<input name="email" id="email" type="email" size="40" required>
 		</div>
 		<br>
 		<div>
@@ -52,15 +52,15 @@
 				<strong>Name:</strong> (optional)
 				<br>
 			</label>
-			<input id="name" type="text" size="40">
+			<input name="name" id="name" type="text" size="40">
 		</div>
 		<br	>
 		<div>
 			<label for="name-link">
-				<strong>Link to you:</strong> We can add a link to a website if you'd like (optional)
+				<strong>Link to you:</strong> We can add a link to a website if you'd like. (optional)
 				<br>
 			</label>
-			<input id="name-link" type="text" size="40">
+			<input name="name-link" id="name-link" type="url" size="40">
 		</div>
 		<br>
 		<div>
@@ -71,7 +71,14 @@
 
 	<hr>
 
-	<div class="footer"><a href="index.html">Ear Association</a></div>
+	<div class="footer">
+		<div class="left">
+			<a href="/submit.html?song=" target="_blank">Submit an Association</a>
+		</div>
+		<div class="right">
+			<a href="/">Ear Association</a>
+		</div>
+	</div>
 
 </body>
 
